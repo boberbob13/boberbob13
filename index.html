@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoberBob</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f7f7f7;
+            margin: 0;
+            font-family: 'Press Start 2P', cursive;
+            overflow: hidden; /* Prevent scrollbars */
+            flex-direction: column; /* Arrange children vertically */
+        }
+
+        #start-menu {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #start-menu h1 {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        #start-button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            font-family: 'Press Start 2P', cursive;
+            background-color: #5cb85c; /* Green button */
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.1s ease;
+        }
+
+        #start-button:hover {
+            background-color: #4cae4c;
+        }
+
+        #start-button:active {
+            transform: scale(0.98);
+        }
+
+        #footer-text {
+            font-size: 0.8em;
+            color: #777;
+            margin-top: 20px; /* Add some space above the text */
+        }
+
+
+        #game-container {
+            width: 90%; /* Responsive width */
+            max-width: 800px; /* Max width */
+            height: 200px;
+            border-bottom: 2px solid #333;
+            position: relative;
+            overflow: hidden;
+            background-color: #fff;
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            display: none; /* Hidden initially */
+        }
+
+        #dino {
+            width: 40px; /* Set width for the image */
+            height: 50px; /* Set height for the image */
+            position: absolute;
+            bottom: 0;
+            left: 50px;
+            /* background-color and border-radius removed */
+        }
+
+        .obstacle {
+            width: 20px;
+            /* Height will be set dynamically */
+            background-color: #777; /* Simple obstacle graphic */
+            position: absolute;
+            /* Bottom will be set dynamically */
+            /* Right will be set dynamically */
+            border-radius: 4px;
+        }
+
+        #score {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 1em;
+            color: #333;
+        }
+
+        #game-over {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.5em;
+            color: #d9534f; /* Reddish color */
+            text-align: center;
+            display: none; /* Hidden initially */
+        }
+
+        #restart-button {
+            padding: 10px 20px;
+            font-size: 1em;
+            font-family: 'Press Start 2P', cursive;
+            background-color: #5cb85c; /* Green button */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+
+        #restart-button:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+    <div id="start-menu">
+        <h1>BoberBob</h1>
+        
+        <div id="footer-text">Random projects here!</div> </div>
+</body>
+</html>
